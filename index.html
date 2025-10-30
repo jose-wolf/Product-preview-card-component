@@ -19,10 +19,16 @@
     <main>
       <article class="container">
         <div class="image">
-          <img
-            src="./images/image-product-mobile.jpg"
-            alt="Frasco do perfume Gabrielle Essence Eau De Parfum"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/image-product-desktop.jpg"
+            />
+            <img
+              src="./images/image-product-mobile.jpg"
+              alt="Frasco do perfume Gabrielle Essence Eau De Parfum"
+            />
+          </picture>
         </div>
 
         <div class="content-container">
