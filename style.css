@@ -141,3 +141,14 @@ button > span {
     border-radius: 0;
   }
 }
+
+@media (hover: hover) {
+  button:hover {
+    background-color: var(--color-green700);
+    cursor: pointer;
+  }
+
+  button {
+    transition: background-color 0.3s ease;
+  }
+}
