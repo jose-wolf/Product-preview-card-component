@@ -35,7 +35,7 @@ main {
   flex-direction: column;
 }
 
-.container > .image > img {
+.container .image picture img {
   width: 100%;
   display: block;
   border-radius: 10px 10px 0 0;
@@ -85,6 +85,7 @@ main {
   font-family: var(--font-title);
   font-weight: bold;
   font-size: 2rem;
+  line-height: 100%;
 }
 
 .price > .price-old {
@@ -92,6 +93,7 @@ main {
   color: var(--color-grey);
   font-size: 0.8125rem;
   text-decoration: line-through;
+  line-height: 120%;
 }
 
 button {
@@ -109,4 +111,33 @@ button {
 button > span {
   font-size: 0.875rem;
   font-family: var(--font-paragraph);
+}
+
+/* Tablet version */
+@media (min-width: 768px) {
+  body {
+    background-color: var(--color-cream);
+  }
+
+  main {
+    background-color: var(--color-white);
+    max-width: 37.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container > .image,
+  .container > .content-container {
+    flex: 50%;
+  }
+
+  .container > .image > picture > img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
 }
